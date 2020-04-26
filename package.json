@@ -16,4 +16,8 @@
     "url": "https://github.com/dzhumaevn/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/dzhumaevn/frontend-project-lvl1#readme",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
 }

@@ -1,7 +1,7 @@
 const showMessage = (userAnswer, rightAnswer, i, userName) => {
   const isUserAnswerRight = userAnswer === rightAnswer;
 
-  if (isUserAnswerRight && i < 3) {
+  if (isUserAnswerRight && i === 2) {
     console.log(`Congratulations, ${userName}!`);
   } else if (isUserAnswerRight) {
     console.log('Correct!');

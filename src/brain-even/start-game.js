@@ -1,12 +1,8 @@
 import readlineSync from 'readline-sync';
-import greeting from '../cli.js';
 
 const getRandomNum = () => Math.floor(Math.random() * 20);
 
-const startGame = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = greeting();
-
+const startGame = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let isAnswerRight = true;

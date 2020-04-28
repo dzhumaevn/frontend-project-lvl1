@@ -5,7 +5,11 @@
 
   <img src="https://github.com/dzhumaevn/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg" />
 </div>
-
+<br />
+<h3>Brain Even</h3>
 <a href="https://asciinema.org/a/hpQAD7YdQyoCBw9TevEX5p3Vs" target="_blank">
   <img src="https://asciinema.org/a/hpQAD7YdQyoCBw9TevEX5p3Vs.svg" />
 </a>
+
+<h3>Brain Calc</h3>
+<a href="https://asciinema.org/a/cEbZqJLbsZEE9GlrHpBaf4Cl0" target="_blank"><img src="https://asciinema.org/a/cEbZqJLbsZEE9GlrHpBaf4Cl0.svg" /></a>

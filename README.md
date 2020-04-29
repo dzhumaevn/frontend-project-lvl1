@@ -27,3 +27,8 @@
 <a href="https://asciinema.org/a/ffHCpDTIsRsdwkUMzBOFu084z" target="_blank">
   <img src="https://asciinema.org/a/ffHCpDTIsRsdwkUMzBOFu084z.svg" />
 </a>
+
+<h3>Brain Prime</h3>
+<a href="https://asciinema.org/a/MpZbymRrndgTb6wgMM47Xviw1" target="_blank">
+  <img src="https://asciinema.org/a/MpZbymRrndgTb6wgMM47Xviw1.svg" />
+</a>

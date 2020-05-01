@@ -1,4 +1,5 @@
-import getRandomNum from '../get-random-num.js';
+import getRandomNum from '../utils.js';
+import start from '../index.js';
 
 const createProgression = () => {
   const startPos = getRandomNum(100);
@@ -21,4 +22,19 @@ const createProgression = () => {
   return result;
 };
 
-export default createProgression;
+const showGameRules = () => console.log('What number is missing in the progression?');
+
+const askQuestion = () => {
+  const progression = createProgression();
+
+  const rightAnswer = progression[0];
+  const question = progression[1];
+
+  console.log(`Question: ${question}`);
+
+  return rightAnswer;
+};
+
+const startGame = () => start(showGameRules, askQuestion);
+
+export default startGame;

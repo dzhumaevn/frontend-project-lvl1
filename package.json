@@ -13,12 +13,12 @@
   "author": "Nizami Dzhumaev",
   "license": "ISC",
   "keywords": [
-    "brain-games",
-    "brain-even",
-    "brain-calc",
-    "brain-gcd",
-    "brain-progression",
-    "brain-prime"
+    "game",
+    "even",
+    "calc",
+    "gcd",
+    "progression",
+    "prime"
   ],
   "bugs": {
     "url": "https://github.com/dzhumaevn/frontend-project-lvl1/issues"

@@ -1,9 +1,11 @@
 import greeting from './cli.js';
 import showMessage from './show-message.js';
 import getUserAnswer from './get-user-answer.js';
+import getUserName from './get-user-name';
 
 const start = (showGameRules, askQuestion) => {
-  const userName = greeting();
+  greeting();
+  const userName = getUserName();
 
   showGameRules();
 

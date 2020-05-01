@@ -19,16 +19,16 @@
 </a>
 
 <h3>Brain GCD</h3>
-<a href="https://asciinema.org/a/YIPXjxwgFqeLvyFTuTG06k15i" target="_blank">
-  <img src="https://asciinema.org/a/YIPXjxwgFqeLvyFTuTG06k15i.svg" />
+<a href="https://asciinema.org/a/WqQeW2ME6XHibqrtJxhfoIyVk" target="_blank">
+  <img src="https://asciinema.org/a/WqQeW2ME6XHibqrtJxhfoIyVk.svg" />
 </a>
 
 <h3>Brain Progression</h3>
-<a href="https://asciinema.org/a/ffHCpDTIsRsdwkUMzBOFu084z" target="_blank">
-  <img src="https://asciinema.org/a/ffHCpDTIsRsdwkUMzBOFu084z.svg" />
+<a href="https://asciinema.org/a/D75yxQs9i1ptVmfNDH5D3JfG3" target="_blank">
+  <img src="https://asciinema.org/a/D75yxQs9i1ptVmfNDH5D3JfG3.svg" />
 </a>
 
 <h3>Brain Prime</h3>
-<a href="https://asciinema.org/a/MpZbymRrndgTb6wgMM47Xviw1" target="_blank">
-  <img src="https://asciinema.org/a/MpZbymRrndgTb6wgMM47Xviw1.svg" />
+<a href="https://asciinema.org/a/6JKQHpcSgcN62UuJy076Wv7B5" target="_blank">
+  <img src="https://asciinema.org/a/6JKQHpcSgcN62UuJy076Wv7B5.svg" />
 </a>

@@ -1,6 +1,6 @@
 <div>
-  <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability">
-    <img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" />
+  <a href="https://codeclimate.com/github/dzhumaevn/frontend-project-lvl1/maintainability">
+    <img src="https://api.codeclimate.com/v1/badges/07ae0540d798f439dca1/maintainability" />
   </a>
 
   <img src="https://github.com/dzhumaevn/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg" />

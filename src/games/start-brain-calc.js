@@ -11,20 +11,21 @@ const mathItUp = {
 
 const operations = ['+', '-', '*'];
 
-const showGameRules = () => console.log('What is the result of the expression?');
+const gameRules = 'What is the result of the expression?';
 
 const askQuestion = () => {
-  const randomNum1 = getRandomNum(10);
-  const randomNum2 = getRandomNum(10);
+  const num1 = getRandomNum(0, 10);
+  const num2 = getRandomNum(0, 10);
 
-  const randomNumForOperations = getRandomNum(2);
-  const randomOperation = operations[randomNumForOperations];
+  const numForOperations = getRandomNum(0, 2);
+  const operation = operations[numForOperations];
 
-  console.log(`Question: ${randomNum1} ${randomOperation} ${randomNum2}`);
-
-  return mathItUp[randomOperation](randomNum1, randomNum2).toString();
+  return {
+    question: `${num1} ${operation} ${num2}`,
+    rightAnswer: mathItUp[operation](num1, num2).toString(),
+  };
 };
 
-const startGame = () => start(showGameRules, askQuestion);
+const startGame = () => start(gameRules, askQuestion);
 
 export default startGame;

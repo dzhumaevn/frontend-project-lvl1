@@ -1,10 +1,12 @@
 import getRandomNum from '../utils.js';
 import start from '../index.js';
 
+const gameRules = 'What number is missing in the progression?';
+
 const createProgression = () => {
-  const startPos = getRandomNum(100);
-  const progressionStep = getRandomNum(10);
-  const hideElementPos = getRandomNum(9);
+  const startPos = getRandomNum(0, 100);
+  const progressionStep = getRandomNum(0, 10);
+  const hideElementPos = getRandomNum(0, 9);
 
   const progression = [startPos];
 
@@ -19,22 +21,12 @@ const createProgression = () => {
   progression[hideElementPos] = '..';
   result.push(progression.join(' '));
 
-  return result;
+  return {
+    question: result[1],
+    rightAnswer: result[0],
+  };
 };
 
-const showGameRules = () => console.log('What number is missing in the progression?');
-
-const askQuestion = () => {
-  const progression = createProgression();
-
-  const rightAnswer = progression[0];
-  const question = progression[1];
-
-  console.log(`Question: ${question}`);
-
-  return rightAnswer;
-};
-
-const startGame = () => start(showGameRules, askQuestion);
+const startGame = () => start(gameRules, createProgression);
 
 export default startGame;

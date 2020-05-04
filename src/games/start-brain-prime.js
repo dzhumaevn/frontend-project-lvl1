@@ -8,15 +8,17 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const showGameRules = () => console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const askQuestion = () => {
-  const randomNum = getRandomNum(50);
-  console.log(`Question: ${randomNum}`);
+  const randomNum = getRandomNum(0, 50);
 
-  return isPrime(randomNum) ? 'yes' : 'no';
+  return {
+    question: `${randomNum}`,
+    rightAnswer: isPrime(randomNum) ? 'yes' : 'no',
+  };
 };
 
-const startGame = () => start(showGameRules, askQuestion);
+const startGame = () => start(gameRules, askQuestion);
 
 export default startGame;

@@ -1,24 +1,23 @@
 import getRandomNum from '../utils.js';
 import start from '../index.js';
 
-const NOD = (x, y) => {
-  if (y > x) return NOD(y, x);
+const getNOD = (x, y) => {
   if (!y) return x;
-
-  return NOD(y, x % y);
+  return getNOD(y, x % y);
 };
 
-const showGameRules = () => console.log('Find the greatest common divisor of given numbers.');
+const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const askQuestion = () => {
-  const randomNum1 = getRandomNum(100);
-  const randomNum2 = getRandomNum(100);
+  const num1 = getRandomNum(0, 100);
+  const num2 = getRandomNum(0, 100);
 
-  console.log(`Question: ${randomNum1} ${randomNum2}`);
-
-  return NOD(randomNum1, randomNum2).toString();
+  return {
+    question: `${num1} ${num2}`,
+    rightAnswer: getNOD(num1, num2).toString(),
+  };
 };
 
-const startGame = () => start(showGameRules, askQuestion);
+const startGame = () => start(gameRules, askQuestion);
 
 export default startGame;

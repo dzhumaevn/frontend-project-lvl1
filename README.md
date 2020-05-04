@@ -3,7 +3,9 @@
     <img src="https://api.codeclimate.com/v1/badges/07ae0540d798f439dca1/maintainability" />
   </a>
 
-  <img src="https://github.com/dzhumaevn/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg" />
+  <a href="https://github.com/dzhumaevn/frontend-project-lvl1/actions">
+    <img src="https://github.com/dzhumaevn/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg" />
+  </a>
 </div>
 
 <br />

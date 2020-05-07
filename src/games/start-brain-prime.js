@@ -8,17 +8,17 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const askQuestion = () => {
-  const randomNum = getRandomNum(0, 50);
+const genRoundData = () => {
+  const num = getRandomNum(0, 50);
 
   return {
-    question: `${randomNum}`,
-    rightAnswer: isPrime(randomNum) ? 'yes' : 'no',
+    question: num.toString(),
+    rightAnswer: isPrime(num) ? 'yes' : 'no',
   };
 };
 
-const startGame = () => start(gameRules, askQuestion);
+const startGame = () => start(description, genRoundData);
 
 export default startGame;

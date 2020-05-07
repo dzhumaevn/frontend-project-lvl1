@@ -1,7 +1,7 @@
 import getRandomNum from '../utils.js';
 import start from '../index.js';
 
-const gameRules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const createProgression = () => {
   const startPos = getRandomNum(0, 100);
@@ -22,11 +22,11 @@ const createProgression = () => {
   result.push(progression.join(' '));
 
   return {
-    question: result[1],
     rightAnswer: result[0],
+    question: result[1],
   };
 };
 
-const startGame = () => start(gameRules, createProgression);
+const startGame = () => start(description, createProgression);
 
 export default startGame;

@@ -6,9 +6,9 @@ const getNOD = (x, y) => {
   return getNOD(y, x % y);
 };
 
-const gameRules = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
-const askQuestion = () => {
+const genRoundData = () => {
   const num1 = getRandomNum(0, 100);
   const num2 = getRandomNum(0, 100);
 
@@ -18,6 +18,6 @@ const askQuestion = () => {
   };
 };
 
-const startGame = () => start(gameRules, askQuestion);
+const startGame = () => start(description, genRoundData);
 
 export default startGame;

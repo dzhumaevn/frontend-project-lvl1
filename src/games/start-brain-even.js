@@ -7,6 +7,7 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const genRoundData = () => {
   const num = getRandomNum(0, 10);
+
   return {
     question: num.toString(),
     rightAnswer: isEven(num) ? 'yes' : 'no',

@@ -7,7 +7,8 @@ const start = (description, genRoundData) => {
 
   console.log(description);
 
-  for (let questionCount = 1; questionCount <= 3; questionCount += 1) {
+  const roundsCount = 3;
+  for (let questionCount = 1; questionCount <= roundsCount; questionCount += 1) {
     const { question, rightAnswer } = genRoundData();
 
     console.log(`Question: ${question}`);
@@ -15,14 +16,13 @@ const start = (description, genRoundData) => {
     const userAnswer = readlineSync.question('Your answer: ')
       .toLowerCase();
 
-    const isAnswerRight = userAnswer === rightAnswer;
-
-    if (isAnswerRight) {
-      console.log('Correct!');
-    } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}. Let's try again, ${userName}!`);
+    if (userAnswer !== rightAnswer) {
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
+
+    console.log('Correct!');
   }
 
   console.log(`Congratulations, ${userName}!`);

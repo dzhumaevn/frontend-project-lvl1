@@ -1,29 +1,36 @@
 import getRandomNum from '../utils.js';
 import start from '../index.js';
 
+const genProgression = (firstElement, step, progressionLength) => {
+  const progression = [];
+
+  for (let i = 0; i < progressionLength; i += 1) {
+    const current = firstElement + i * step;
+    progression.push(current);
+  }
+
+  return progression;
+};
+
 const description = 'What number is missing in the progression?';
 
 const createProgression = () => {
-  const startPos = getRandomNum(0, 100);
-  const progressionStep = getRandomNum(0, 10);
-  const hideElementPos = getRandomNum(0, 9);
+  const progressionLength = 10;
 
-  const progression = [startPos];
+  const firstElement = getRandomNum(0, 100);
+  const step = getRandomNum(0, progressionLength);
+  const hideElementPos = getRandomNum(0, progressionLength - 1);
 
-  for (let i = 1; i < 10; i += 1) {
-    const prevValue = progression[i - 1];
-    progression.push(prevValue + progressionStep);
-  }
+  const progression = genProgression(firstElement, step, progressionLength);
 
-  const result = [];
-  result.push(progression[hideElementPos].toString());
+  const rightAnswer = progression[hideElementPos].toString();
 
   progression[hideElementPos] = '..';
-  result.push(progression.join(' '));
+  const question = progression.join(' ');
 
   return {
-    rightAnswer: result[0],
-    question: result[1],
+    rightAnswer,
+    question,
   };
 };
 

@@ -1,9 +1,9 @@
 import getRandomNum from '../utils.js';
 import start from '../index.js';
 
-const getNOD = (x, y) => {
+const getGCD = (x, y) => {
   if (!y) return x;
-  return getNOD(y, x % y);
+  return getGCD(y, x % y);
 };
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -14,7 +14,7 @@ const genRoundData = () => {
 
   return {
     question: `${num1} ${num2}`,
-    rightAnswer: getNOD(num1, num2).toString(),
+    rightAnswer: getGCD(num1, num2).toString(),
   };
 };
 

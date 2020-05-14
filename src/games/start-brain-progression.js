@@ -1,7 +1,9 @@
 import getRandomNum from '../utils.js';
 import start from '../index.js';
 
-const genProgression = (firstElement, step, progressionLength) => {
+const progressionLength = 10;
+
+const genProgression = (firstElement, step) => {
   const progression = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
@@ -14,9 +16,7 @@ const genProgression = (firstElement, step, progressionLength) => {
 
 const description = 'What number is missing in the progression?';
 
-const createProgression = () => {
-  const progressionLength = 10;
-
+const genRoundData = () => {
   const firstElement = getRandomNum(0, 100);
   const step = getRandomNum(0, progressionLength);
   const hideElementPos = getRandomNum(0, progressionLength - 1);
@@ -34,6 +34,6 @@ const createProgression = () => {
   };
 };
 
-const startGame = () => start(description, createProgression);
+const startGame = () => start(description, genRoundData);
 
 export default startGame;
